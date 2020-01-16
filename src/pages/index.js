@@ -48,9 +48,7 @@ const SpeakersList = () => {
                         <ul>
                         <li>{edge.node.id}</li>
                         <li>{edge.node.speakerName}</li>
-                        <li>
-                            <img src={edge.node.speakerPhoto.file.url}></img>
-                        </li>
+                        
                         </ul>
                     )
                 }
