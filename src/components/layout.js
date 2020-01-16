@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <>dfasdfasdf
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+        sdfas
       </div>
     </>
   )
