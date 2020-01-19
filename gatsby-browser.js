@@ -5,3 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+
+import "./src/vendor/css/normalize.css"
+import "./src/scss/global.scss"
+import "./src/scss/gridlex/gridlex.scss"

@@ -4,6 +4,7 @@ import { useStaticQuery, graphql} from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import HomeHero from "../components/homehero"
 
 // const IndexPage = () => (
 //   <Layout>
@@ -33,6 +34,9 @@ const SpeakersList = () => {
                 url
               }
             }
+            speakerDetails {
+                speakerDetails
+              }
           }
         }
       }
@@ -41,14 +45,17 @@ const SpeakersList = () => {
 
     return (
         <Layout>
-        
+            <HomeHero />
             {data.allContentfulSpeaker.edges.map((edge) => { 
                 
                     return (
                         <ul>
                         <li>{edge.node.id}</li>
                         <li>{edge.node.speakerName}</li>
-                        
+                        <li>{edge.node.speakerDetails.speakerDetails}</li>
+                        <li>
+                            <img src={edge.node.speakerPhoto.file.url} alt="{edge.node.speakerName}"></img>
+                        </li>
                         </ul>
                     )
                 }

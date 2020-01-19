@@ -1,0 +1,25 @@
+
+* {
+    box-sizing: border-box;
+
+    :before,
+    :after {
+        box-sizing: inherit;
+    }
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Quicksand", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
