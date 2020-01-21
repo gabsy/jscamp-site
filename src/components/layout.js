@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div class="wrapper">
+    <div className="wrapper">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
@@ -33,7 +33,6 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-        sdfas
       </div>
     </div>
     </>

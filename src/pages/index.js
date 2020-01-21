@@ -46,6 +46,7 @@ const SpeakersList = () => {
     return (
         <Layout>
             <HomeHero />
+            <div className="speakers-list" id="speakers">
             {data.allContentfulSpeaker.edges.map((edge) => { 
                 
                     return (
@@ -60,6 +61,7 @@ const SpeakersList = () => {
                     )
                 }
             )}
+            </div>
             
         </Layout>
     )

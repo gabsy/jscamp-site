@@ -38,12 +38,13 @@ module.exports = {
         resolve: `gatsby-plugin-google-fonts`,
         options: {
             fonts: [
-            `quicksand\:300,400,400i,700` // you can also specify font weights and styles
+            `quicksand\:300,400,700` // you can also specify font weights and styles
         ],
         display: 'swap'
         },
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-smoothscroll`
     
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -1,3 +1,5 @@
+@import '../vendor/css/normalize.css';
+@import 'homehero.scss';
 
 * {
     box-sizing: border-box;
@@ -16,10 +18,50 @@ html {
 body {
     font-family: "Quicksand", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    line-height: 2rem;
+    line-height: 1.7rem;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+a,
+a:visited {
+    color: #354BF0;
+    transition: all 0.3s ease;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    width: 100%;
+    border-style: none;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 100px;
+    padding: 15px 45px;
+    color: #ffffff !important;
+    background: #EF318D;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: darken(#FF449E, 8%);
+    }
+}
+
+.speakers-list {
+    margin-top: 100vh;
+    z-index: 10;
+    background: #fff;
+}
+
+
 
 

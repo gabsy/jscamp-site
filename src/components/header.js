@@ -4,6 +4,7 @@ import React from "react"
 const Header = () => (
   <header className="header">
       {/* <Link to="/">hsfsfsgdfgsf</Link> */}
+    
 </header>
 //     style={{
 //       background: `rebeccapurple`,

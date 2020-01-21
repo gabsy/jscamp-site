@@ -1,0 +1,81 @@
+
+.hero-home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left:0;
+    background-color: #3838ff;
+    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../images/pattern-bg.png");
+    background-repeat: repeat;
+    // background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    z-index: -1;
+
+    @media (min-width: 1025px) {
+        flex-direction: row;
+        padding-top: 8%;
+        align-items: unset;
+    }
+
+    div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .background-illustration {
+        position: absolute;
+        display: inline-block;
+        bottom: -15px;
+        width: 120%;
+        z-index:-1;
+        left:50%;
+        transform: translateX(-50%);
+
+        @media (min-width: 1025px) {
+            width: 80%;
+            max-width: 1600px;
+        }
+    }
+    
+    .logo {
+        text-align: center;
+        max-width: 394px;
+        width: 80%;
+        margin: 0 auto;
+
+        @media (min-width: 1700px) {
+            max-width: 500px;
+        }
+    }
+
+    .button {
+        margin: 50px 0 20px;
+
+        @media (min-width: 768px) {
+            margin: 90px 0 20px;
+        }
+    }
+
+    .registration-note {
+        color: rgba(#fff, 0.65);
+        font-size: 15px;
+    }
+
+    .date-tagline {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .full-soon {
+        position: absolute;
+        top: 30px;
+        color: rgba( #fff, 0.65);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
