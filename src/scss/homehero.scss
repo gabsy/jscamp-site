@@ -7,7 +7,7 @@
     top: 0;
     left:0;
     background-color: #3838ff;
-    background-image: url("../images/hero-bg.jpg");
+    // background-image: url("../images/hero-bg.jpg");
     background-image: url("../images/pattern-bg.png");
     background-repeat: repeat;
     justify-content: center;
@@ -89,7 +89,7 @@
 
     .full-soon {
         position: absolute;
-        top: 30px;
+        top: 35px;
         color: rgba( #fff, 0.65);
         left: 50%;
         transform: translateX(-50%);

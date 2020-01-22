@@ -28,7 +28,7 @@ const SpeakersList = () => {
 
     return (
         <section className="speakers-grid" id="speakers">
-            <h2 className="text-center">Confirmed Speakers</h2>
+            <h2 className="text-center">Our Lovely Speakers</h2>
             <div className="block">
                 {/* <ul className="speakers-list">
                 {data.allContentfulSpeaker.edges.map((edge) => { 
