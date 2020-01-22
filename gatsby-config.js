@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `JSCamp Romania 2020`,
-    description: `JAMstack conferences host speakers, workshops, and more for learning to design, develop, & deploy modern web projects. 2020 Conf locations in London and SF - check it out.`,
+    description: `A JavaScript Conference for Romania and Eastern-Europe`,
     author: `Gabi Schiopu`
   },
   plugins: [
