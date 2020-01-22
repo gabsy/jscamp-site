@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    title: `JSCamp Romania 2020`,
+    description: `JAMstack conferences host speakers, workshops, and more for learning to design, develop, & deploy modern web projects. 2020 Conf locations in London and SF - check it out.`,
+    author: `Gabi Schiopu`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -38,7 +38,7 @@ module.exports = {
         resolve: `gatsby-plugin-google-fonts`,
         options: {
             fonts: [
-            `quicksand\:300,400,700` // you can also specify font weights and styles
+            `quicksand\:300,400,700`
         ],
         display: 'swap'
         },

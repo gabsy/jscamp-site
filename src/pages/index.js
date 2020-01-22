@@ -1,10 +1,8 @@
 import React from "react"
-import { useStaticQuery, graphql} from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import HomeHero from "../components/homehero"
+import Speakers from "../components/speakers"
 
 // const IndexPage = () => (
 //   <Layout>
@@ -21,50 +19,16 @@ import HomeHero from "../components/homehero"
 
 // export default IndexPage
 
-const SpeakersList = () => {
-    const data = useStaticQuery(graphql `
-    query {
-      allContentfulSpeaker(limit: 1000) {
-        edges {
-          node {
-            id
-            speakerName
-            speakerPhoto {
-              file {
-                url
-              }
-            }
-            speakerDetails {
-                speakerDetails
-              }
-          }
-        }
-      }
-    }
-  `)
+const IndexPage = () => {
 
     return (
         <Layout>
+            <SEO title="JSCamp Romania 2020" />
             <HomeHero />
-            <div className="speakers-list" id="speakers">
-            {data.allContentfulSpeaker.edges.map((edge) => { 
-                
-                    return (
-                        <ul>
-                        <li>{edge.node.id}</li>
-                        <li>{edge.node.speakerName}</li>
-                        <li>{edge.node.speakerDetails.speakerDetails}</li>
-                        <li>
-                            <img src={edge.node.speakerPhoto.file.url} alt="{edge.node.speakerName}"></img>
-                        </li>
-                        </ul>
-                    )
-                }
-            )}
-            </div>
+            <Speakers />
             
         </Layout>
     )
 }
 
-export default SpeakersList
+export default IndexPage
