@@ -23,7 +23,7 @@ const HomeHero = () => {
                 
                 <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" className="button">Register now!</a>
                 <div className="registration-note">
-                    Only 50 Early-Bird tickets available at <b>129 EUR</b>. 
+                    50 Early-Bird tickets available at <b>129 EUR</b>. 
                 </div>
                 
             </div>
