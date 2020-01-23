@@ -89,15 +89,6 @@
         font-size: 18px;
     }
 
-    .full-soon {
-        position: absolute;
-        top: 35px;
-        color: rgba( #fff, 0.65);
-        left: 50%;
-        transform: translateX(-50%);
-        white-space: nowrap;
-    }
-
     .confirmed {
         position: absolute;
         bottom: -15px;
@@ -113,4 +104,13 @@
             transform: translateX(-50%) translateY(-10px);
         }
     }
+}
+
+.full-soon {
+    // position: absolute;
+    // top: 35px;
+    color: rgba( #fff, 0.65);
+    // left: 50%;
+    // transform: translateX(-50%);
+    white-space: nowrap;
 }

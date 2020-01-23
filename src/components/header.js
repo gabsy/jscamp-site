@@ -7,7 +7,10 @@ import logoTwitter from "../images/icon-twitter.svg"
 const Header = () => (
   <header className="header">
         <div className="logo-header">
-                <img src={logoHeader} alt="JSCamp Romania"></img>
+                {/* <img src={logoHeader} alt="JSCamp Romania"></img> */}
+                <div className="full-soon">
+                    * Full website coming soon *
+                </div>
         </div>
         <div className="social-icons text-right">
             <a href="https://www.facebook.com/JscRomania"><img src={logoFB} alt="Follow us on Facebook"></img></a>
