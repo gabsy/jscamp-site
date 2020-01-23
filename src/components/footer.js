@@ -3,8 +3,8 @@ import logoFB from "../images/icon-facebook.svg"
 import logoTwitter from "../images/icon-twitter.svg"
 
 const Footer = () => (
-  <footer className="footer">
-      <div className="social-icons text-center">
+  <footer className="footer text-center">
+      <div className="social-icons ">
         <a href="https://www.facebook.com/JscRomania"><img src={logoFB} alt="Follow us on Facebook"></img></a>
         <a href="https://www.twitter.com/jscampro"><img src={logoTwitter} alt="Follow us on Twitter"></img></a>
      </div>
@@ -12,14 +12,17 @@ const Footer = () => (
             <div className="text-center">
                 <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" title="Get your Ticket!">Get your Ticket(s)!</a>
             </div>
-            <div className="text-center">
+            <div>
                 <a href="mailto:contact@jscamp.ro" title="Become a Sponsor!">Become a Sponsor!</a>
             </div>
-            <div className="text-center">
+            <div>
                  <a href="mailto:contact@jscamp.ro">contact@jscamp.ro</a>
             </div>
       </div>   
-      <div className="copyright text-center">
+      <div className="organizedby">
+            Organized by <a href="http://gabischiopu.com"><b>Gabi Schiopu</b></a> and <a href="https://www.evensys.ro"><b>Evensys</b></a>
+        </div> 
+      <div className="copyright">
             © {new Date().getFullYear()} <b>JSCamp Romania</b>. Built with <a href="https://www.gatsbyjs.org"><b>Gatsby</b></a>.
                 Hosted on <a href="https://www.netlify.com"><b>Netlify</b></a>.
         </div>   
