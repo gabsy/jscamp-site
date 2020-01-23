@@ -10,10 +10,10 @@ const Footer = () => (
      </div>
       <div className="block">
             <div className="text-center">
-                <a href="/" title="Get your Ticket!">Get your Ticket(s)!</a>
+                <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" title="Get your Ticket!">Get your Ticket(s)!</a>
             </div>
             <div className="text-center">
-                <a href="/" title="Become a Sponsor!">Become a Sponsor!</a>
+                <a href="mailto:contact@jscamp.ro" title="Become a Sponsor!">Become a Sponsor!</a>
             </div>
             <div className="text-center">
                  <a href="mailto:contact@jscamp.ro">contact@jscamp.ro</a>

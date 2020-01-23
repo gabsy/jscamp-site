@@ -1,6 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import logo from "../images/logo.svg"
 import confirmedImg from "../images/confirmed.svg"
 // import heroillustration from "../images/hero-illustration.svg"
@@ -22,7 +20,7 @@ const HomeHero = () => {
                     <h1><img src={logo} alt="JSCamp Romania 2020"></img></h1>
                     <div className="date-tagline">September 21, 2020, <b>BUCHAREST</b></div>
                 </div>
-                <a href="/" className="button">Register now!</a>
+                <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" className="button">Register now!</a>
                 <div className="registration-note">
                 Only 50 Early-Bird tickets available at <b>129 EUR</b>. 
                 </div>

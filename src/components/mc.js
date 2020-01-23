@@ -3,13 +3,10 @@ import brucePhoto from "../images/bruce-lawson.png"
 import logoTwitter from "../images/icon-twitter.svg"
 
 const MasterCeremony = () => {
-
     return (
         <section className="master-ceremony">
             <div className="block">
-                
                 <div className="grid">
-                
                     <div class="col-6_md-12">
                     <h2>
                         <div class="tagline">MASTER OF CEREMONY AND CO-CURATOR</div>
