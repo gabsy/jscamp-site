@@ -432,10 +432,6 @@ h2 {
 
         @media (min-width: 480px) {
             grid-template-columns: repeat(2, 1fr);
-
-            img {
-                max-width: 70%;
-            }
         }
 
         @media (min-width: 768px) {
@@ -456,7 +452,7 @@ h2 {
             background: #f9f9f9;
             justify-content: center;
             align-items: center;
-            height: 200px;
+            height: 180px;
 
             &:hover {
                 img {
@@ -468,13 +464,13 @@ h2 {
         }
 
         img {
-            max-width: 55%;
+            max-width: 75%;
             filter: grayscale(100%);
             opacity: 0.9;
             transition: all 0.3s ease;
 
             @media (min-width: 480px) {
-                max-width: 70%;
+                max-width: 55%;
             }
         }
 
