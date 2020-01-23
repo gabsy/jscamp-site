@@ -36,7 +36,11 @@ const SpeakersList = () => {
                                     <img src={edge.node.speakerPhoto.file.url} alt={edge.node.speakerName}></img>
                                 </div>
                                 <div className="speaker-name">{edge.node.speakerName}</div>
-                                <div className="speaker-title-company">{edge.node.speakerTitle} @ <b>{edge.node.speakerCompany}</b></div>
+                                <div className="speaker-title-company">{edge.node.speakerTitle} 
+                                {edge.node.speakerCompany !== null &&
+                                   <span> @ <b>{edge.node.speakerCompany}</b></span>
+                                }
+                                </div>
                                 <div className="topic-tag">{edge.node.topic}</div>
                             </div>
                             )

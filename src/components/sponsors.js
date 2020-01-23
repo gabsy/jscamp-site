@@ -16,20 +16,22 @@ const Sponsors = () => {
     return (
         <section className="sponsors">
             <h2>Past Sponsors</h2>
-            <p>Here are some of the sponsors that helped us along the way. <br></br>Interested in sponsoring the 6th edition of JScamp in 2020? <b><a href="mailto:contact@jscamp.ro?subject=Sponsorship 2020">Let's talk!</a></b></p>
             <div className="block">
-                <div><img src={ibm} alt="IBM"></img></div>
-                <div><img src={systematic} alt="1and1"></img></div>
-                <div><img src={booking} alt="Booking.com"></img></div>
-                <div><img src={uipath} alt="UiPath"></img></div>
-                <div><img src={accenture} alt="Accenture"></img></div>
-                <div><img src={endava} alt="Endava"></img></div>
-                <div><img src={kambi} alt="Kambi"></img></div>
-                <div><img src={deutschebank} alt="Deutsche Bank"></img></div>
-                <div><img src={stefanini} alt="Stefanini"></img></div>
-                <div><img src={softvision} alt="Softvison"></img></div>
-                <div><img src={staropramen} alt="Ciuc"></img></div>
-                <div><img src={carlsberg} alt="Carlsberg"></img></div>
+                <p>Here are some of the sponsors that helped us along the way. <br></br>Interested in sponsoring the 6th edition of JScamp in 2020? <b><a href="mailto:contact@jscamp.ro?subject=Sponsorship 2020">Let's talk!</a></b></p>
+                <div class="sponsors-list">
+                    <div><img src={ibm} alt="IBM"></img></div>
+                    <div><img src={systematic} alt="1and1"></img></div>
+                    <div><img src={booking} alt="Booking.com"></img></div>
+                    <div><img src={uipath} alt="UiPath"></img></div>
+                    <div><img src={accenture} alt="Accenture"></img></div>
+                    <div><img src={endava} alt="Endava"></img></div>
+                    <div><img src={kambi} alt="Kambi"></img></div>
+                    <div><img src={deutschebank} alt="Deutsche Bank"></img></div>
+                    <div><img src={stefanini} alt="Stefanini"></img></div>
+                    <div><img src={softvision} alt="Softvison"></img></div>
+                    <div><img src={staropramen} alt="Ciuc"></img></div>
+                    <div><img src={carlsberg} alt="Carlsberg"></img></div>
+                </div>
             </div>
             <a href="mailto:contact@jscamp.ro?subject=Sponsorship 2020" className="button">Become a 2020 Sponsor!</a>
         </section>

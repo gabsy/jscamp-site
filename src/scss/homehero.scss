@@ -15,16 +15,18 @@
     color: #fff;
     overflow: hidden;
 
-    @media (min-width: 1025px) {
-        flex-direction: row;
-        padding-top: 8.5%;
-        align-items: unset;
+
+    @media (min-width: 1024px) {
+        // flex-direction: row;
+        // padding-top: 7%;
+        // align-items: unset;
     }
 
     .inner-container {
         text-align: center;
         width: 100%;
         z-index: 1;
+        margin-top: -15%;
     }
 
     .background-illustration {
