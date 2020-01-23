@@ -2,7 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `JSCamp Romania 2020`,
     description: `A JavaScript Conference for Romania and Eastern-Europe`,
-    author: `Gabi Schiopu`
+    author: `Gabi Schiopu`,
+    baseUrl: 'https://www.jscamp.ro',
+    keywords: 'event, conference, JavaScript, Web development, HTML5, Mobile, web performance',
+    image: 'images/fb-cover.png'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

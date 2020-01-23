@@ -24,7 +24,7 @@ const IndexPage = () => {
 
     return (
         <Layout>
-            <SEO title="JSCamp Romania 2020" />
+            <SEO />
             <HomeHero />
             <Speakers />
             <MasterCeremony />
