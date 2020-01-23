@@ -3,9 +3,9 @@ module.exports = {
     title: `JSCamp Romania 2020`,
     description: `A JavaScript Conference for Romania and Eastern-Europe`,
     author: `Gabi Schiopu`,
-    baseUrl: 'http://jscamp.ro',
-    keywords: 'event, conference, JavaScript, Web development, HTML5, Mobile, web performance',
-    image: '/images/fbcover.png'
+    baseUrl: 'https://jscamp.ro',
+    keywords: 'event, conference, JavaScript, React, Vue, Node JS, Webpack, PWA, Accessibility, Web development,Mobile, web performance',
+    // image: 'https://jscamp.ro/images/fbcover.png'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
