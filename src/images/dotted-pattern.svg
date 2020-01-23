@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>dotted-patern</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0593377976">
+        <g id="dotted-patern" fill="#42586C" fill-rule="nonzero">
+            <circle id="Oval" cx="20" cy="20" r="3"></circle>
+            <path d="M3,0 C3,1.65685425 1.65685425,3 0,3 L0,0 L3,0 Z" id="Combined-Shape"></path>
+            <path d="M3,37 C3,38.6568542 1.65685425,40 0,40 L0,37 L3,37 Z" id="Combined-Shape-Copy" transform="translate(1.500000, 38.500000) scale(-1, 1) rotate(-180.000000) translate(-1.500000, -38.500000) "></path>
+            <path d="M40,0 C40,1.65685425 38.6568542,3 37,3 L37,0 L40,0 Z" id="Combined-Shape-Copy-3" transform="translate(38.500000, 1.500000) scale(-1, 1) translate(-38.500000, -1.500000) "></path>
+            <path d="M40,37 C40,38.6568542 38.6568542,40 37,40 L37,37 L40,37 Z" id="Combined-Shape-Copy-2" transform="translate(38.500000, 38.500000) rotate(180.000000) translate(-38.500000, -38.500000) "></path>
+        </g>
+    </g>
+</svg>

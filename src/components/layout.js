@@ -8,9 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import CookieConsent from "react-cookie-consent";
 
 import Header from "./header"
-import "./layout.css"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,22 +26,24 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <div className="wrapper">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
       </div>
+    </div>
+    <CookieConsent
+        location="bottom"
+        buttonText="Ok! Agreed!"
+        cookieName="jsCampRoCookie"
+        style={{ background: "#2B373B", fontSize: "14px" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px", fontWeight:"bold" }}
+        expires={150}>
+            <div class="text-right">
+                This website uses cookies to enhance the user experience.{" "}
+            </div>
+    </CookieConsent>
     </>
   )
 }

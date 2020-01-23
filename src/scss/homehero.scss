@@ -1,0 +1,116 @@
+
+.hero-home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left:0;
+    background-color: #3838ff;
+    // background-image: url("../images/hero-bg.jpg");
+    background-image: url("../images/pattern-bg.png");
+    background-repeat: repeat;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+
+
+    @media (min-width: 1024px) {
+        // flex-direction: row;
+        // padding-top: 7%;
+        // align-items: unset;
+    }
+
+    .inner-container {
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        margin-top: -15%;
+    }
+
+    .background-illustration {
+        position: absolute;
+        display: inline-block;
+        bottom: -5px;
+        top: 0;
+        left:50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+        background-image: url("../images/hero-illustration.svg");
+        background-position: center bottom;
+        background-size: 160%;
+        background-repeat: no-repeat;
+
+        @media (min-width: 480px) {
+            background-size: 120%;
+        }
+
+        @media (min-width: 1025px) {
+            background-size: 100%;
+            max-width: 1200px;
+        }
+
+        @media (min-width: 1681px) {
+            max-width: 1600px;
+        }
+
+        overflow: hidden;
+    }
+    
+    .logo {
+        text-align: center;
+        max-width: 394px;
+        width: 80%;
+        margin: 0 auto;
+
+        @media (min-width: 1700px) {
+            max-width: 500px;
+        }
+    }
+
+    .button {
+        margin: 50px 0 20px;
+
+        @media (min-width: 768px) {
+            margin: 90px 0 20px;
+        }
+    }
+
+    .registration-note {
+        color: rgba(#fff, 0.8);
+        font-size: 15px;
+    }
+
+    .date-tagline {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .full-soon {
+        position: absolute;
+        top: 35px;
+        color: rgba( #fff, 0.65);
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    .confirmed {
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        background: transparent;
+        border: none;
+        transition: transform 0.3s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateX(-50%) translateY(-10px);
+        }
+    }
+}
