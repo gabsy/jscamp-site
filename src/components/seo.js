@@ -48,7 +48,7 @@ const SEO = () => {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={ogImage} />
+      <meta property="og:image" content={`${url}${ogImage}`} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={author} />
