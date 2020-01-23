@@ -129,11 +129,12 @@ const SEO = () => {
   return (
     <Helmet>
       <title>{title}</title>
+
       <link rel="canonical" href={url} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="image" content={image} />
-
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
