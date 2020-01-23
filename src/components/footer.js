@@ -13,10 +13,10 @@ const Footer = () => (
                 <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" title="Get your Ticket!">Get your Ticket(s)!</a>
             </div>
             <div>
-                <a href="mailto:contact@jscamp.ro" title="Become a Sponsor!">Become a Sponsor!</a>
+                <a href="mailto:contact@jscamp.ro?subject=Sponsorship" title="Become a Sponsor!">Become a Sponsor!</a>
             </div>
             <div>
-                 <a href="mailto:contact@jscamp.ro">contact@jscamp.ro</a>
+                 <a href="mailto:contact@jscamp.ro?subject=JSCamp 2020 Website Contact">contact@jscamp.ro</a>
             </div>
       </div>   
       <div className="organizedby">
