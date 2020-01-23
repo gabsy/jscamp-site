@@ -10,7 +10,7 @@ const MasterCeremony = () => {
                     <div class="col-6_md-12">
                     <h2>
                         <div class="tagline">MASTER OF CEREMONY AND CO-CURATOR</div>
-                        BRUCE LAWSON
+                        Bruce Lawson
                     </h2>
                        
                         <p>Bruce has been the best friend of our conferece since its start in 2014. He was a speaker at the event and MC-ed most of our JSCamp editions so far. Since 2019 he is also Co-Curator of the event, and his involvement helps us make the best out of JScamp. So, he will be back to Bucharest in 2020!<br></br>We love Bruce and we know you love him too. Or, if it's your first JSCamp, you will. </p>
