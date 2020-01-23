@@ -102,10 +102,10 @@ h2 {
     display: flex;
     width: 100%;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: -1;
     height: auto;
     padding: 30px 70px;
 
@@ -225,6 +225,9 @@ h2 {
 .speakers-grid {
     padding: 4em 0;
     background-image: url("../images/dotted-pattern.svg");
+    background-color: #fff;
+    margin-top: 100vh;
+
 
     .speakers-list {
         width: 100%;
