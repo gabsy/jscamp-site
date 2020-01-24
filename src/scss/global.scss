@@ -261,12 +261,6 @@ section {
                 padding-left: 2.3em;
                 padding-right: 2.3em;
             }
-            
-            .img {
-                height: auto;
-                position: relative;
-                width: 100%;
-            }
 
             .img:before {
                 content: '';
@@ -296,11 +290,15 @@ section {
             
 
             img {
+                height: auto;
+                position: relative;
+                width: 100%;
                 object-fit: cover;
                 // border-radius: 6px;
                 height: 100%;
                 transition: all 0.3s ease;
                 transform-origin: right bottom;
+                z-index: 0;
             }
 
             .topic-tag {
