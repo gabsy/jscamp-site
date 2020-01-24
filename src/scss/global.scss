@@ -407,6 +407,7 @@ section {
 
 .master-ceremony {
     background-image: url("../images/bg-mc.jpg");
+    background-color: #00084E;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -454,6 +455,7 @@ section {
 .sponsors {
     text-align: center;
     background: #f9f9f9;
+    padding-bottom: 6em;
 
     .sponsors-list {
         display: grid;
