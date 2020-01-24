@@ -5,10 +5,9 @@ import { useStaticQuery, graphql } from "gatsby"
 const SpeakersList = () => {
     const data = useStaticQuery(graphql `
     query {
-      allContentfulSpeaker(limit: 1000) {
+      allContentfulSpeaker (sort: {fields: speakerId, order: ASC}) {
         edges {
           node {
-            id
             speakerName
             speakerPhoto {
               file {
