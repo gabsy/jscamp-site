@@ -117,16 +117,21 @@ section {
     height: auto;
     padding: 30px 70px;
 
+    @media ( max-width: 767px) {
+        justify-content: center;
+
+        .social-icons {
+            display: none;
+        }
+    }
+
     .logo-header{
         // display: none;
+        font-size: 90%;
     }
 
     .social-icons {
         flex: 1;
-
-        @media ( max-width: 767px) {
-            display: none;
-        }
     }
 
     img {
