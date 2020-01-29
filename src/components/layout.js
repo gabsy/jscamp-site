@@ -27,11 +27,9 @@ const Layout = ({ children }) => {
   return (
     <>
     <div className="wrapper">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
+        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer />
-      </div>
     </div>
     <CookieConsent
         location="bottom"

@@ -22,7 +22,7 @@ const Footer = () => (
                 </div>
           </div>
           <div className="terms">
-            <Link to="/">Code of Conduct</Link><Link to="/">Terms &amp; Conditions</Link><Link to="/">Privacy Policy</Link><br></br>
+            <Link to="/code-of-conduct">Code of Conduct</Link><Link to="/terms-conditions">Terms &amp; Conditions</Link><Link to="/privacy-policy">Privacy Policy</Link><br></br>
           </div> 
           <div className="copyright">
                 © {new Date().getFullYear()} <b>JSCamp Romania</b>. Organized by <a href="http://gabischiopu.com"><b>Gabi Schiopu</b></a> and <a href="https://www.evensys.ro"><b>Evensys</b></a>
