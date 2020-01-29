@@ -1,6 +1,7 @@
 import React from "react"
 import logoFB from "../images/icon-facebook.svg"
 import logoTwitter from "../images/icon-twitter.svg"
+import {Link} from "gatsby"
 
 const Footer = () => (
   <footer className="footer text-center">
@@ -20,12 +21,12 @@ const Footer = () => (
                     <a href="mailto:contact@jscamp.ro?subject=JSCamp 2020 Website Contact">contact@jscamp.ro</a>
                 </div>
           </div>
-          <div className="organizedby">
-                Organized by <a href="http://gabischiopu.com"><b>Gabi Schiopu</b></a> and <a href="https://www.evensys.ro"><b>Evensys</b></a>
+          <div className="terms">
+            <Link to="/">Code of Conduct</Link><Link to="/">Terms &amp; Conditions</Link><Link to="/">Privacy Policy</Link><br></br>
           </div> 
           <div className="copyright">
-                © {new Date().getFullYear()} <b>JSCamp Romania</b>. Built with <a href="https://www.gatsbyjs.org"><b>Gatsby</b></a>.
-                    Hosted on <a href="https://www.netlify.com"><b>Netlify</b></a>.
+                © {new Date().getFullYear()} <b>JSCamp Romania</b>. Organized by <a href="http://gabischiopu.com"><b>Gabi Schiopu</b></a> and <a href="https://www.evensys.ro"><b>Evensys</b></a>
+                <br></br>Built with <a href="https://www.gatsbyjs.org"><b>Gatsby</b></a>.Hosted on <a href="https://www.netlify.com"><b>Netlify</b></a>.
           </div>
       </div>
   

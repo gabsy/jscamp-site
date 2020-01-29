@@ -14,7 +14,7 @@ import carlsberg from "../images/past_sponsors/carlsberg.png"
 
 const Sponsors = () => {
     return (
-        <section className="sponsors">
+        <section className="sponsors" id="sponsors">
             <h2>Past Sponsors</h2>
             <div className="block">
                 <p>Here are some of the sponsors that helped us along the way. <br></br>Interested in sponsoring the 6th edition of JScamp in 2020? <b><a href="mailto:contact@jscamp.ro?subject=Sponsorship 2020">Let's talk!</a></b></p>

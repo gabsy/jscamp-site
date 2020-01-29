@@ -36,6 +36,11 @@ a:visited {
     }
 }
 
+button {
+    transition: all 0.3s ease;
+    outline: none;
+}
+
 p {
     margin: 1.8em 0;
 }
@@ -137,6 +142,49 @@ section {
     img {
         width: auto;
     }
+
+    .top-navigation {
+        flex:1;
+        text-align: right;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+            }
+        }
+
+        a, button {
+            display: block;
+            padding: 3px 15px;
+            color: rgba(#fff, 0.7);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 80%;
+            font-weight: 900;
+            border: none;
+            background: none;
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(#fff, 1);
+            }
+
+            &.tickets {
+                padding: 4px 20px;
+                margin-left: 15px;
+                border: 1px solid rgba(#fff, 0.7);
+                border-radius: 100px;
+
+                &:hover {
+                    border: 1px solid rgba(#fff, 1);
+                }
+            }
+        }
+    }
 }
 
 .social-icons {
@@ -161,6 +209,7 @@ section {
     padding: 60px 0 90px;
     background: #000;
     color: rgba(#fff, 0.8);
+    font-size: 80%;
   
     .social-icons {
         margin-bottom: 40px
@@ -195,7 +244,6 @@ section {
             padding-left: 20px;
             line-height: 1;
             white-space: nowrap;
-            font-size: 85%;
             
             &:before {
                 content:'';
@@ -209,11 +257,14 @@ section {
         }
     }
 
-    .organizedby {
+    .terms {
         border-top: 1px solid rgba(#fff, 0.15);
         color: rgba(#fff, 0.7);
         padding: 30px 0 0;
-        font-size: 90%;
+
+        a {
+            margin: 0 15px;
+        }
     }
 
     .copyright {
@@ -221,7 +272,6 @@ section {
         grid-row: 2;
         padding: 40px 0 0;
         color: rgba(#fff, 0.4);
-        font-size: 80%;
 
         a {
             padding-right: 0;
