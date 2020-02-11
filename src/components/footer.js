@@ -1,6 +1,7 @@
 import React from "react"
 import logoFB from "../images/icon-facebook.svg"
 import logoTwitter from "../images/icon-twitter.svg"
+import logoYouTube from "../images/icon-youtube.svg"
 import {Link} from "gatsby"
 
 const Footer = () => (
@@ -8,6 +9,7 @@ const Footer = () => (
       <div className="social-icons ">
         <a href="https://www.facebook.com/JscRomania"><img src={logoFB} alt="Follow us on Facebook"></img></a>
         <a href="https://www.twitter.com/jscampro"><img src={logoTwitter} alt="Follow us on Twitter"></img></a>
+        <a href="https://www.youtube.com/watch?v=wsdPeC86OH0&list=PLbUMlIAqtRWPlOwcrOakwcj6DgKTrWFQq"><img src={logoYouTube} alt="Watch Our Videos"></img></a>
      </div>
       <div className="block">
           <div className="footer-inner">

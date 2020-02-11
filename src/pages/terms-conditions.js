@@ -9,8 +9,8 @@ const PrivacyPolicy = () => (
     <div class="inner-page-wrapper">
         <div class="block">
         <h2>Terms &amp; Conditions</h2>
-        <p>Welcome to the website https://jscamp.ro/ (the "Website"). Please note that before using the Website, you need to go to the "Terms & Conditions" section. This section defines the conditions under which you can access and use the Website.</p>
-        <p>The website is dedicated to the [JSCamp Romania] event, organized by the Society with the support and collaboration of its partners.</p>
+        <p>Welcome to the website https://jscamp.ro/ (the "Website"). Please note that before using the Website, you need to go to the "Terms &amp; Conditions" section. This section defines the conditions under which you can access and use the Website.</p>
+        <p>The website is dedicated to the [JSCamp Romania] event, organized by the EVENSYS CONSULT SRL with the support and collaboration of its partners.</p>
         <p>The Website is the property of EVENSYS CONSULT SRL ("The Company") based in Pictor Ion Negulici Street no. 32, Sector 1, Bucharest, Romania, registered with the Trade Registry under no. [J40 / 3885/2006], Unique Registration Code [18459449].</p>
         <p>The User of the Website (the "User") is required to take note of and accept the Terms and Conditions and other policies relevant to the Website by checking the "I agree to the Terms and Conditions of Use of the Website" box. By checking the "I agree to the Terms and Conditions of Use of the Website", you admit that you have read, understood and agreed to comply with your obligations under the Terms of Use of the Website. If you do not agree to the terms of use of the Website, do not access or use the Website.</p>
 

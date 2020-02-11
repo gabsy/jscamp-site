@@ -5,6 +5,7 @@ import HomeHero from "../components/homehero"
 import Speakers from "../components/speakers"
 import MasterCeremony from "../components/mc"
 import Sponsors from "../components/sponsors"
+import Workshops from "../components/workshops"
 
 // const IndexPage = () => (
 //   <Layout>
@@ -29,6 +30,7 @@ const IndexPage = () => {
             <HomeHero />
             <Speakers />
             <MasterCeremony />
+            <Workshops />
             <Sponsors />
             
         </Layout>

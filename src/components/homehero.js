@@ -5,9 +5,9 @@ import confirmedImg from "../images/confirmed.svg"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
-const HomeHero = () => {
-    return (
-        <>
+const HomeHero = () => (
+    // return (
+    //     <>
         <div className="hero-home" id="hero-home">
             <div className="background-illustration">
                 {/* <img src={heroillustration} alt="JSCamp Romania"></img> */}
@@ -27,11 +27,10 @@ const HomeHero = () => {
                 </div>
                 
             </div>
-            <button className="confirmed" onClick={() => scrollTo('#speakers')}><img src={confirmedImg} alt="Confrimed Speakers"></img></button> 
+            {/* <button className="confirmed" onClick={() => scrollTo('#speakers')}><img src={confirmedImg} alt="Confrimed Speakers"></img></button>  */}
         </div>
-        </>
-    )
-    
-}
+        // </>
+    // )
+)
 
 export default HomeHero
