@@ -17,7 +17,7 @@ const Footer = () => (
                     <a href="mailto:contact@jscamp.ro?subject=Sponsorship" title="Become a Sponsor!">Become a Sponsor!</a>
                 </div>
                 <div>
-                    <a href="mailto:contact@jscamp.ro?subject=JSCamp 2020 Website Contact">contact@jscamp.ro</a>
+                    <a href="mailto:office@evensys.ro?subject=JSCamp 2020 Website Contact">office@evensys.ro</a>
                 </div>
           </div>
           <div className="organizedby">
