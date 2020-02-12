@@ -13,6 +13,7 @@ import CookieConsent from "react-cookie-consent";
 import Header from "./header"
 import Footer from "./footer"
 
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

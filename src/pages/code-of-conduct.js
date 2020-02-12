@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from 'react-helmet';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -6,6 +7,7 @@ const CodeOfConduct = () => (
   <Layout>
     
     <SEO title="JSCamp Romania Code of Conduct" />
+    <Helmet bodyAttributes={{ class: 'codeConduct' }} />
     <div class="inner-page-wrapper">
         <div class="block">
             <h2>Code of Conduct</h2>

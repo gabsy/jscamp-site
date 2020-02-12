@@ -1,4 +1,5 @@
 @import '../vendor/css/normalize.css';
+@import 'mixins.scss';
 @import 'homehero.scss';
 
 * {
@@ -43,6 +44,10 @@ button {
 
 p {
     margin: 1.8em 0;
+
+    li & {
+        margin: 1em 0 ;
+    }
 }
 
 button {
@@ -103,6 +108,7 @@ section {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    font-size: 15px;
 
     &:hover {
         background: darken(#FF449E, 8%);
@@ -335,44 +341,7 @@ section {
                 padding-right: 2.3em;
             }
             
-            .img {
-                height: auto;
-                position: relative;
-                width: 100%;
-                z-index: 0;
-            }
-
-            .img:before {
-                content: '';
-                width: 100%;
-                height: calc(100% - 9px);
-                display:block;
-                position: absolute;
-                left:0;
-                bottom: 9px;
-                background: #EF318D;
-                transform-origin: left bottom;
-                z-index: -1;
-                transition: all 0.3s ease;
-            }
-
-            &:hover {
-
-                .img:before {
-                    transform: rotate(-2deg);
-                }
-
-                img {
-                    transform: rotate(1deg);
-                }
-            }
-
-            img {
-                object-fit: cover;
-                height: 100%;
-                transition: all 0.3s ease;
-                transform-origin: right bottom;
-            }
+            @include speaker-image($maxWidth: 100%);
 
             .topic-tag {
                 position: absolute;
@@ -476,8 +445,63 @@ section {
 
 //WORKSHOPS 
 
-.workshops-grid {
+.workshops-home {
     background-color: #fff;
+    padding-bottom: 6em;
+
+    .workshop {
+        @include speaker-image($maxWidth: 180px);
+        
+        @media (min-width: 768px) {
+            padding: 0 2.3em;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .workshop-header {
+            
+            .speaker-name {
+                text-transform: uppercase;
+                font-weight: bold;
+                display: inline-block;
+            }
+
+            .img {
+                float: left;
+                margin-right: 40px;
+            }
+
+            h2 {
+                color: #EF318D;
+                margin-bottom: 0.6em;
+                font-size: 1.6em;
+
+                @media (min-width: 768px) {
+                    font-size: 1.8em;
+                }
+            }
+        }
+
+        .button {
+            margin-top: 60px;
+        }
+
+        .workshop-details {
+            padding-top: 20px;
+            clear: both;
+
+            hr {
+                border-top: 1px solid #efefef;
+            }
+
+            p:first-child {
+                margin: 0 0 1.3em;
+            }
+        }
+
+    }
 }
 
 // MC

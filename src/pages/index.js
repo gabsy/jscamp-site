@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from 'react-helmet';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomeHero from "../components/homehero"
@@ -27,6 +28,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <SEO />
+            <Helmet bodyAttributes={{ class: 'homepage' }} />
             <HomeHero />
             <Speakers />
             <MasterCeremony />
