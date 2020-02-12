@@ -4,9 +4,9 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const TopNavigation = () => {
 
-        window.onload = (event) => {
-            console.log('win load ' + pageClass)
-        };
+        // window.onload = (event) => {
+        //     console.log('win load ' + pageClass)
+        // };
 
 
     const [pageClass, setPageClass] = useState();
