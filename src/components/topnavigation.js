@@ -1,73 +1,27 @@
-import { Link } from "gatsby";
-import React, { useState, useEffect } from "react";
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import { Link } from "gatsby"
+import React from "react"
+import ScrollTo from 'gatsby-plugin-smoothscroll'
+import { globalHistory as history } from '@reach/router'
+
+
 
 const TopNavigation = () => {
+    const { location } = history
 
-        // window.onload = (event) => {
-        //     console.log('win load ' + pageClass)
-        // };
-
-
-    const [pageClass, setPageClass] = useState();
-
-    useEffect(() => {
-        const handlePageClass = () => {
-            let pageClassChange = document.body.className;
-            // if(pageClassChange !== pageClass) {
-                setPageClass(pageClassChange);
-            // }
-        };
-
-        document.onload = handlePageClass();
-        // document.addEventListener('DOMContentLoaded', handlePageClass);
-
-        return () => {
-        // clean up the event handler when the component unmounts
-            // document.removeEventListener('load', handlePageClass);
-        };
-
-    }, [pageClass]);
-
-
-    // const [scrolled, setScrolled] = useState(false);
-
-    // // change state on scroll
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //     const isScrolled = window.scrollY > 10;
-    //     if (isScrolled !== scrolled) {
-    //         setScrolled(!scrolled);
-    //     }
-    //     };
-
-    //     document.addEventListener('scroll', handleScroll, { passive: true });
-
-    //     return () => {
-    //     // clean up the event handler when the component unmounts
-    //     document.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, [scrolled]);
-    
-    console.log('before render ' + pageClass)
     return ( 
     <nav className="top-navigation">
         <ul>
             <li>
-            {/* {pageClass} */}
-            {/* {pageClass === "homepage" ? <button onClick={() => scrollTo('#speakers')}>Speakers</button> : <button onClick={() => scrollTo('#speakers')}>No Speakers</button>} */}
-            {pageClass === "homepage" ? <button onClick={() => scrollTo('#speakers')}>Speakers</button> : <Link to="/#speakers">No Speakers</Link>}
-            
-            {/* <button onClick={() => scrollTo('#speakers')}>Speakers</button>  */}
+                {location.pathname === "/" ? <button onClick={() => ScrollTo('#speakers')}>Speakers</button> : <Link to="/#speakers">Speakers</Link>}
             </li>
             <li>
-                <button onClick={() => scrollTo('#workshops')}>Workshops</button> 
+                {location.pathname === "/" ? <button onClick={() => ScrollTo('#workshops')}>Workshops</button> : <Link to="/#workshops">Workshops</Link>}
             </li>
             <li>
-                <button onClick={() => scrollTo('#venue')}>Venue</button> 
+                {location.pathname === "/" ? <button onClick={() => ScrollTo('#venue')}>Venue</button> : <Link to="/#venue">Venue</Link>}
             </li>
             <li>
-                <button onClick={() => scrollTo('#sponsors')}>Sponsors</button> 
+                {location.pathname === "/" ? <button onClick={() => ScrollTo('#sponsors')}>Sponsors</button> : <Link to="/#sponsors">Sponsors</Link>}
             </li>
             <li>
                 <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" className="tickets">Tickets</a>

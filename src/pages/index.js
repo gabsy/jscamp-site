@@ -7,6 +7,7 @@ import Speakers from "../components/speakers"
 import MasterCeremony from "../components/mc"
 import Sponsors from "../components/sponsors"
 import Workshops from "../components/workshops"
+import Venue from "../components/venue"
 
 // const IndexPage = () => (
 //   <Layout>
@@ -33,6 +34,7 @@ const IndexPage = () => {
             <Speakers />
             <MasterCeremony />
             <Workshops />
+            <Venue/>
             <Sponsors />
             
         </Layout>

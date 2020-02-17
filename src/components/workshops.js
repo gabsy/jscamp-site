@@ -10,6 +10,7 @@ const Workshops = () => {
       allContentfulSpeaker ( sort:{fields: speakerId, order: ASC}) {
         edges {
           node {
+            speakerId
             speakerName
             speakerPhoto {
               file {
@@ -34,9 +35,9 @@ const Workshops = () => {
                 {data.allContentfulSpeaker.edges.map((edge) => { 
                         if(edge.node.workshopTitle !== null) {
                             return (
-                                <div className="col-6_lg-12">
+                                <div className="col-6_lg-12" key={edge.node.speakerId}>
                                     <div className="workshop">
-                                        <div class="workshop-header">
+                                        <div className="workshop-header">
                                             <div className="img">
                                                 <img src={edge.node.speakerPhoto.file.url} alt={edge.node.speakerName}></img>
                                             </div>

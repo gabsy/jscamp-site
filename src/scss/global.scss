@@ -1,6 +1,7 @@
 @import '../vendor/css/normalize.css';
 @import 'mixins.scss';
 @import 'homehero.scss';
+@import 'reactburger.scss';
 
 * {
     box-sizing: border-box;
@@ -67,7 +68,7 @@ h2 {
     line-height: 1.2em;
 
     @media (min-width: 768px) {
-        font-size: 3.2em;
+        font-size: 2.8em;
     }
 }
 
@@ -90,7 +91,7 @@ h2 {
 }
 
 section {
-    padding: 2em 0;
+    padding: 4em 0 2em;
 
     @media (min-width: 768px) {
         padding: 4em 0;
@@ -137,9 +138,14 @@ section {
     left: 0;
     z-index: 1;
     height: auto;
-    padding: 17px 40px;
+    padding: 30px 50px;
     background-color: #3838ff;
     background-image: url("../images/pattern-bg.png");
+    transition: padding 0.4s cubic-bezier(.25,.1,.25,1);
+
+    &[data-active="true"] {
+        padding: 13px 38px;
+    }
 
     @media ( max-width: 767px) {
         justify-content: center;
@@ -150,11 +156,15 @@ section {
     }
 
     .logo-header{
-        // display: none;
+        visibility: hidden;
         font-size: 90%;
 
         h1 {
             margin:0;
+        }
+
+        @media (min-width: 768px) {
+            visibility: visible;
         }
     }
 
@@ -170,14 +180,20 @@ section {
         flex:1;
         text-align: right;
         padding-top: 5px;
+       
 
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: none;
 
             li {
                 display: inline-block;
+            }
+
+            @media (min-width: 768px) {
+                display: block;
             }
         }
 
@@ -449,6 +465,26 @@ section {
     background-color: #fff;
     padding-bottom: 6em;
 
+    .workshops-grid {
+        
+        @media (min-width: 768px) {
+            margin: -40px -0.5rem 50px;
+            box-shadow: 5px 13px 42px -2px rgba(59,83,111,.1);
+            // padding: 60px 40px 40px;
+
+            > div {
+            padding: 60px 40px 40px;
+            transition: all 0.3s cubic-bezier(.25,.1,.25,1);
+
+                &:hover {
+                    background-color: #f9f9f9;
+                    box-shadow: 3px 13px 42px -2px rgba(59,83,111,.1);
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+
     .workshop {
         @include speaker-image($maxWidth: 180px);
         
@@ -469,17 +505,20 @@ section {
             }
 
             .img {
-                float: left;
-                margin-right: 40px;
+
+                @media (min-width: 768px) {
+                    float: left;
+                    margin-right: 40px;
+                }
             }
 
             h2 {
                 color: #EF318D;
                 margin-bottom: 0.6em;
-                font-size: 1.6em;
+                font-size: 1.4em;
 
                 @media (min-width: 768px) {
-                    font-size: 1.8em;
+                    font-size: 1.6em;
                 }
             }
         }
@@ -547,6 +586,38 @@ section {
 
         @media (max-width: 767px) {
             max-width: 300px;
+        }
+    }
+}
+
+// VENUE
+
+.venue {
+    background-image: url("../images/bg-venu.jpg");
+    background-color: #00084E;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgba(#fff, 0.8);
+    padding-top: 0;
+
+    @media (max-width: 767px) {
+        text-align: center; 
+    }
+
+    h2 {
+        color: #fff;
+        padding-top:1.5em;
+        margin-bottom: 1em;
+
+        .tagline {
+            font-size: 0.9rem;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 0;
         }
     }
 }
