@@ -48,8 +48,7 @@ const SpeakersList = () => {
                     )}
                 </div>
                 <div className="more-speakers-text">
-                    <p><b>More speakers to be announced.</b>
-                    <br></br>Stay tuned, we will also run <b>2 full-day workshops on September 22</b>. Details will be available soon. </p>
+                    <p><b>More speakers to be announced.</b></p>
                     <p>Follow us for updates on <a href="https://www.facebook.com/JscRomania">Facebook</a> and <a href="https://www.twitter.com/jscampro">Twitter</a>.</p>
                 </div>
             </div>
