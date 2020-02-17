@@ -60,7 +60,8 @@ const Workshops = () => {
                 </div>
 
                 <div className="text-center">
-                    <p><b>Please note that a computer will not be provided, so please bring your own laptop to the workshop, high speed WI-FI connection will be available.</b></p>
+                    <p><b>Please note that a computer will not be provided, so please bring your own laptop to the workshop, high speed WI-FI connection will be available.<br></br>
+                    Coffee, snacks and lunch will be provided.</b></p>
                     <br></br><a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20SEM" className="button">GET YOUR WORKSHOP TICKET!</a>
                 </div>
             </div>
