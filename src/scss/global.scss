@@ -56,7 +56,7 @@ button {
 }
 
 img {
-    width: 100%;
+    // width: 100%;
     border-style: none;
 }
 
@@ -509,6 +509,7 @@ section {
                 @media (min-width: 768px) {
                     float: left;
                     margin-right: 40px;
+                    max-width: 180px;
                 }
             }
 
@@ -626,7 +627,8 @@ section {
     padding-bottom: 6em;
     // background-image: url("../images/dotted-pattern.svg");
 
-    .sponsors-list {
+    .sponsors-list,
+    .media-partners-list {
         display: grid;
         grid-template-rows: auto;
         grid-row-gap: 2px;
@@ -634,10 +636,10 @@ section {
         // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-template-columns: repeat(1, 1fr);
         background:rgb(233, 233, 233);
-        margin-bottom: 2em;
+        margin: 2em 0 4em;
 
         @media (min-width: 480px) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
 
         // @media (min-width: 768px) {
@@ -646,7 +648,7 @@ section {
         // }
 
         @media (min-width: 1200px) {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
 
         // @media (min-width: 1600px) {
@@ -660,28 +662,35 @@ section {
             justify-content: center;
             align-items: center;
             height: 180px;
-
-            &:hover {
-                img {
-                    transform: translateY(-10px) scale(1.05);
-                    filter: none;
-                    opacity: 1;
-                }
-            }
         }
 
         img {
-            max-width: 75%;
-            filter: grayscale(100%);
+            max-width: auto;
+            // width: auto!important;
+            // filter: grayscale(100%);
             opacity: 0.9;
             transition: all 0.3s ease;
 
-            @media (min-width: 480px) {
-                max-width: 55%;
+            &:hover {
+                transform: translateY(-5px) scale(1.05);
+                filter: none;
+                opacity: 1;
             }
+
+        }
+    }
+
+    .media-partners-list {
+        margin-bottom: 2em;
+        grid-template-columns: repeat(1, 1fr);
+
+        @media (min-width: 480px) {
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
 }
 

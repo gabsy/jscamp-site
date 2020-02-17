@@ -33,7 +33,7 @@ const SpeakersList = () => {
                         return (
                             <div className="speaker col-3_lg-4_md-6_xs-12" key={edge.node.speakerId}>
                                 <div className="img">
-                                    <img src={edge.node.speakerPhoto.file.url} alt={edge.node.speakerName}></img>
+                                    <img src={edge.node.speakerPhoto.file.url} alt={edge.node.speakerName} className="img"></img>
                                 </div>
                                 <div className="speaker-name">{edge.node.speakerName}</div>
                                 <div className="speaker-title-company">{edge.node.speakerTitle} 
