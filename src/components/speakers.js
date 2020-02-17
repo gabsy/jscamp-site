@@ -8,6 +8,7 @@ const SpeakersList = () => {
       allContentfulSpeaker (sort: {fields: speakerId, order: ASC}) {
         edges {
           node {
+            speakerId
             speakerName
             speakerPhoto {
               file {
@@ -30,7 +31,7 @@ const SpeakersList = () => {
                 <div className="grid speakers-list">
                     {data.allContentfulSpeaker.edges.map((edge) => { 
                         return (
-                            <div className="speaker col-3_lg-4_md-6_xs-12">
+                            <div className="speaker col-3_lg-4_md-6_xs-12" key={edge.node.speakerId}>
                                 <div className="img">
                                     <img src={edge.node.speakerPhoto.file.url} alt={edge.node.speakerName}></img>
                                 </div>

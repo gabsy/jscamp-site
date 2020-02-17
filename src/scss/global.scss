@@ -1,5 +1,7 @@
 @import '../vendor/css/normalize.css';
+@import 'mixins.scss';
 @import 'homehero.scss';
+@import 'reactburger.scss';
 
 * {
     box-sizing: border-box;
@@ -36,8 +38,17 @@ a:visited {
     }
 }
 
+button {
+    transition: all 0.3s ease;
+    outline: none;
+}
+
 p {
     margin: 1.8em 0;
+
+    li & {
+        margin: 1em 0 ;
+    }
 }
 
 button {
@@ -80,7 +91,7 @@ h2 {
 }
 
 section {
-    padding: 2em 0;
+    padding: 4em 0 2em;
 
     @media (min-width: 768px) {
         padding: 4em 0;
@@ -98,9 +109,22 @@ section {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    font-size: 15px;
 
     &:hover {
         background: darken(#FF449E, 8%);
+    }
+}
+
+.inner-page-wrapper {
+    padding: 130px 0 100px;
+
+    .block {
+        max-width: 1000px;
+    }
+
+    h2 {
+        margin-bottom: 1em;
     }
 }
 
@@ -109,13 +133,19 @@ section {
 .header {
     display: flex;
     width: 100%;
-
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     height: auto;
-    padding: 30px 70px;
+    padding: 30px 50px;
+    background-color: #3838ff;
+    background-image: url("../images/pattern-bg.png");
+    transition: padding 0.4s cubic-bezier(.25,.1,.25,1);
+
+    &[data-active="true"] {
+        padding: 13px 38px;
+    }
 
     @media ( max-width: 767px) {
         justify-content: center;
@@ -126,8 +156,16 @@ section {
     }
 
     .logo-header{
-        // display: none;
+        visibility: hidden;
         font-size: 90%;
+
+        h1 {
+            margin:0;
+        }
+
+        @media (min-width: 768px) {
+            visibility: visible;
+        }
     }
 
     .social-icons {
@@ -137,13 +175,63 @@ section {
     img {
         width: auto;
     }
+
+    .top-navigation {
+        flex:1;
+        text-align: right;
+        padding-top: 5px;
+       
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+
+            li {
+                display: inline-block;
+            }
+
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+
+        a, button {
+            display: block;
+            padding: 3px 15px;
+            color: rgba(#fff, 0.7);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 80%;
+            font-weight: 900;
+            border: none;
+            background: none;
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(#fff, 1);
+            }
+
+            &.tickets {
+                padding: 4px 20px;
+                margin-left: 15px;
+                border: 1px solid rgba(#fff, 0.7);
+                border-radius: 100px;
+
+                &:hover {
+                    border: 1px solid rgba(#fff, 1);
+                }
+            }
+        }
+    }
 }
 
 .social-icons {
 
     a {
         display: inline-block;
-        margin-left: 25px;
+        margin-left: 30px;
         margin-top:5px;
         opacity: 0.8;
         transform: scale(0.9);
@@ -161,6 +249,7 @@ section {
     padding: 60px 0 90px;
     background: #000;
     color: rgba(#fff, 0.8);
+    font-size: 80%;
   
     .social-icons {
         margin-bottom: 40px
@@ -195,7 +284,6 @@ section {
             padding-left: 20px;
             line-height: 1;
             white-space: nowrap;
-            font-size: 85%;
             
             &:before {
                 content:'';
@@ -209,11 +297,14 @@ section {
         }
     }
 
-    .organizedby {
+    .terms {
         border-top: 1px solid rgba(#fff, 0.15);
         color: rgba(#fff, 0.7);
         padding: 30px 0 0;
-        font-size: 90%;
+
+        a {
+            margin: 0 15px;
+        }
     }
 
     .copyright {
@@ -221,7 +312,6 @@ section {
         grid-row: 2;
         padding: 40px 0 0;
         color: rgba(#fff, 0.4);
-        font-size: 80%;
 
         a {
             padding-right: 0;
@@ -267,44 +357,7 @@ section {
                 padding-right: 2.3em;
             }
             
-            .img {
-                height: auto;
-                position: relative;
-                width: 100%;
-                z-index: 0;
-            }
-
-            .img:before {
-                content: '';
-                width: 100%;
-                height: calc(100% - 9px);
-                display:block;
-                position: absolute;
-                left:0;
-                bottom: 9px;
-                background: #EF318D;
-                transform-origin: left bottom;
-                z-index: -1;
-                transition: all 0.3s ease;
-            }
-
-            &:hover {
-
-                .img:before {
-                    transform: rotate(-2deg);
-                }
-
-                img {
-                    transform: rotate(1deg);
-                }
-            }
-
-            img {
-                object-fit: cover;
-                height: 100%;
-                transition: all 0.3s ease;
-                transform-origin: right bottom;
-            }
+            @include speaker-image($maxWidth: 100%);
 
             .topic-tag {
                 position: absolute;
@@ -406,6 +459,90 @@ section {
     }
 }
 
+//WORKSHOPS 
+
+.workshops-home {
+    background-color: #fff;
+    padding-bottom: 6em;
+
+    .workshops-grid {
+        
+        @media (min-width: 768px) {
+            margin: -40px -0.5rem 50px;
+            box-shadow: 5px 13px 42px -2px rgba(59,83,111,.1);
+            // padding: 60px 40px 40px;
+
+            > div {
+            padding: 60px 40px 40px;
+            transition: all 0.3s cubic-bezier(.25,.1,.25,1);
+
+                &:hover {
+                    background-color: #f9f9f9;
+                    box-shadow: 3px 13px 42px -2px rgba(59,83,111,.1);
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+
+    .workshop {
+        @include speaker-image($maxWidth: 180px);
+        
+        @media (min-width: 768px) {
+            padding: 0 2.3em;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .workshop-header {
+            
+            .speaker-name {
+                text-transform: uppercase;
+                font-weight: bold;
+                display: inline-block;
+            }
+
+            .img {
+
+                @media (min-width: 768px) {
+                    float: left;
+                    margin-right: 40px;
+                }
+            }
+
+            h2 {
+                color: #EF318D;
+                margin-bottom: 0.6em;
+                font-size: 1.4em;
+
+                @media (min-width: 768px) {
+                    font-size: 1.6em;
+                }
+            }
+        }
+
+        .button {
+            margin-top: 60px;
+        }
+
+        .workshop-details {
+            padding-top: 20px;
+            clear: both;
+
+            hr {
+                border-top: 1px solid #efefef;
+            }
+
+            p:first-child {
+                margin: 0 0 1.3em;
+            }
+        }
+
+    }
+}
+
 // MC
 
 .master-ceremony {
@@ -449,6 +586,38 @@ section {
 
         @media (max-width: 767px) {
             max-width: 300px;
+        }
+    }
+}
+
+// VENUE
+
+.venue {
+    background-image: url("../images/bg-venu.jpg");
+    background-color: #00084E;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgba(#fff, 0.8);
+    padding-top: 0;
+
+    @media (max-width: 767px) {
+        text-align: center; 
+    }
+
+    h2 {
+        color: #fff;
+        padding-top:1.5em;
+        margin-bottom: 1em;
+
+        .tagline {
+            font-size: 0.9rem;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 0;
         }
     }
 }

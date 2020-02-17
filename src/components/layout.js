@@ -9,9 +9,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import CookieConsent from "react-cookie-consent";
+import { elastic as Menu } from "react-burger-menu";
 
 import Header from "./header"
 import Footer from "./footer"
+import Burgermenu from "./burgermenu"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,12 +29,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div className="wrapper">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
+    <Burgermenu></Burgermenu>
+    <div className="wrapper" id="wrapper">
+        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer />
-      </div>
     </div>
     <CookieConsent
         location="bottom"

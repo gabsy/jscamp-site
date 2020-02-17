@@ -17,7 +17,7 @@ import { navigate } from 'gatsby';
 
 export default () => {
   useEffect(() => {
-    navigate('/');
+    navigate('/your-redirect/');
   }, []);
   return null;
 };

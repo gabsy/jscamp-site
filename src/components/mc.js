@@ -7,12 +7,12 @@ const MasterCeremony = () => {
         <section className="master-ceremony">
             <div className="block">
                 <div className="grid">
-                <div class="col-6_sm-12 text-center">
+                <div className="col-6_sm-12 text-center">
                         <img src={brucePhoto} alt="Bruce Lawson" ></img>
                     </div>
-                    <div class="col-6_sm-12">
+                    <div className="col-6_sm-12">
                     <h2>
-                        <div class="tagline">MASTER OF CEREMONY AND CO-CURATOR</div>
+                        <div className="tagline">MASTER OF CEREMONY AND CO-CURATOR</div>
                         Bruce Lawson
                     </h2>
                        

@@ -1,10 +1,13 @@
 import React from "react"
+import Helmet from 'react-helmet';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomeHero from "../components/homehero"
 import Speakers from "../components/speakers"
 import MasterCeremony from "../components/mc"
 import Sponsors from "../components/sponsors"
+import Workshops from "../components/workshops"
+import Venue from "../components/venue"
 
 // const IndexPage = () => (
 //   <Layout>
@@ -26,9 +29,12 @@ const IndexPage = () => {
     return (
         <Layout>
             <SEO />
+            <Helmet bodyAttributes={{ class: 'homepage' }} />
             <HomeHero />
             <Speakers />
             <MasterCeremony />
+            <Workshops />
+            <Venue/>
             <Sponsors />
             
         </Layout>
