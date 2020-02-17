@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import logoHeader from "../images/logo-header.svg"
 import logoSymbol from "../images/logo-symbol-round.svg"
 import {Link} from "gatsby"
 import TopNavigation from "./topnavigation"
