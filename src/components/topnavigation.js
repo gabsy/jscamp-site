@@ -24,7 +24,7 @@ const TopNavigation = () => {
                 {location.pathname === "/" ? <button onClick={() => ScrollTo('#sponsors')}>Sponsors</button> : <Link to="/#sponsors">Sponsors</Link>}
             </li>
             <li>
-                <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" className="tickets">Tickets</a>
+                <Link to="/tickets" className="tickets">Tickets</Link>
             </li>
         </ul>
     </nav>

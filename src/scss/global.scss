@@ -117,7 +117,7 @@ section {
 }
 
 .inner-page-wrapper {
-    padding: 130px 0 100px;
+    padding: 150px 0 100px;
 
     .block {
         max-width: 1000px;
@@ -125,6 +125,12 @@ section {
 
     h2 {
         margin-bottom: 1em;
+    }
+
+    &.tickets {
+        .block {
+            max-width: 1600px;
+        }
     }
 }
 
@@ -149,6 +155,7 @@ section {
 
     @media ( max-width: 767px) {
         justify-content: center;
+        padding: 13px 38px;
 
         .social-icons {
             display: none;
@@ -692,6 +699,55 @@ section {
             grid-template-columns: repeat(6, 1fr);
         }
     }
+}
+
+.grid-tickets {
+    margin: 70px 0 !important;
+}
+
+.ticket {
+    display: block;
+    padding: 50px 50px 20px;
+    border-radius: 10px;
+    
+    font-size: 18px;
+    color: #000!important;
+    text-decoration: none!important;
+    // background-image: linear-gradient(183deg, #3E66F7 0%, #1D36EB 76%);
+    line-height: 2.2em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 25px 50px -22px rgba(0, 0, 0, 0.13);
+    background-image: linear-gradient(189deg, #F9f9f9 0%, #fefefe 30%);
+
+    p {
+        font-size: 15px;
+    }
+
+    .price {
+        font-size: 32px;
+        font-weight: 700;
+        display: inline-block;
+        margin-right: 10px;
+        color:#EF318D!important;
+    }
+
+    &.workshop {
+        // background-image: linear-gradient(197deg, #EF318D 0%, #D8067F 98%);;
+        // border: 1px solid #EF318D ;
+    }
+
+    &.combo {
+        // background-image: linear-gradient(208deg, #EF318D 0%, #1D36EB 100%);
+    }
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4.1px 5.3px -32px rgba(0, 0, 0, 0.065),
+                0 13.8px 17.9px -32px rgba(0, 0, 0, 0.095),
+                0 62px 80px -32px rgba(0, 0, 0, 0.16);
+    }
+
 }
 
 

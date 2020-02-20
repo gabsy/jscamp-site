@@ -33,7 +33,7 @@ class Burgermenu extends React.Component {
             <a onClick={() => this.closeMenu()} className="menu-item" href="/">
                 Home
             </a>
-            <a onClick={() => this.closeMenu()} className="menu-item" href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF">
+            <a onClick={() => this.closeMenu()} className="menu-item" href="/tickets">
                 Get Tickets!
             </a>
             <a onClick={() => this.closeMenu()} className="menu-item" href="/#speakers">
