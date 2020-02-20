@@ -9,7 +9,7 @@ const CodeOfConduct = () => (
     <SEO title="JSCamp Romania Tickets" />
     <Helmet bodyAttributes={{ class: 'tickets' }} />
     <div class="inner-page-wrapper tickets">
-        <h2 class="text-center">Get your ticket!</h2>
+        <h2 class="text-center">Tickets</h2>
         <div class="block">
           <div class="grid grid-tickets">
               <div class="col-4_lg-6_xs-12">
