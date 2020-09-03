@@ -26,8 +26,8 @@ const Sponsors = () => {
                     <div><a href="https://softlead.ro/"><img src={softlead} alt="Softlead" width="100"></img></a></div>
                     <div><a href="https://techcafe.ro/"><img src={techcafe} alt="TechCafe" width="100"></img></a></div>
                 </div>
-                <p>Interested in sponsoring the 6th edition of JScamp in 2020? <b>Let's talk!</b></p>
-                <a href="mailto:sponsors@jscamp.ro?subject=Sponsorship 2020" className="button">Become a 2020 Sponsor!</a>
+                <p>Interested in sponsoring the 6th (online) edition of JScamp in 2021? <b>Let's talk!</b></p>
+                <a href="mailto:sponsors@jscamp.ro?subject=Sponsorship 2021" className="button">Become a 2021 Sponsor!</a>
             </div>
         </section>
     )
