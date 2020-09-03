@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `JSCamp Romania 2020`,
+    title: `JSCamp Romania 2021`,
     description: `A JavaScript Conference for Romania and Eastern-Europe`,
     author: `Gabi Schiopu`,
     baseUrl: 'https://jscamp.ro',
