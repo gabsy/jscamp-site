@@ -13,12 +13,13 @@ const HomeHero = () => (
             <div className="inner-container">
                 <div className="logo">
                     <h1><img src={logo} alt="JSCamp Romania 2020"></img></h1>
-                    <div className="date-tagline">September 21, 2020, <b>BUCHAREST</b></div>
+                    <div class="online-badge">VIRTUAL EDITION</div>
+                    <div className="date-tagline">February 18-19, 2021</div>
                 </div>
                 
-                <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" className="button">Register now!</a>
+                <a href="http://46.101.199.230/form/index.php/welcome/form/JSC21/JSC21CONF" className="button">Register now!</a>
                 <div className="registration-note">
-                    50 Early-Bird tickets available at <b>129 EUR</b>. 
+                   Tickets available at <b>95 EUR</b>. 
                 </div>
                 
             </div>

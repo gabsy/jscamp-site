@@ -90,7 +90,7 @@
     }
 
     .date-tagline {
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 18px;
     }
 
@@ -123,4 +123,33 @@
     // left: 50%;
     // transform: translateX(-50%);
     white-space: nowrap;
+}
+
+.online-badge
+{
+    border-radius: 100px;
+    padding: 10px 25px;
+    padding-left: 45px;
+    background: #fff;
+    color: #3838ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1.2;
+    margin-top: 15px;
+    position: relative;
+
+    &:before
+    {
+        display: block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 13px;
+        left: 20px;
+        background: #EF318D;
+        content: '';
+        border-radius: 100px;
+    }
 }

@@ -5,7 +5,7 @@ import jsleague from "../images/sponsors/media-partners/jsleague.png"
 import nrcc from "../images/sponsors/media-partners/nrcc.png"
 import softlead from "../images/sponsors/media-partners/softlead.png"
 import techcafe from "../images/sponsors/media-partners/techcafe.png"
-import adobe from "../images/sponsors/adobe.svg"
+import adobe from "../images/sponsors/adobe.png"
 
 const Sponsors = () => {
     return (

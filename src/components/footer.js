@@ -14,13 +14,13 @@ const Footer = () => (
       <div className="block">
           <div className="footer-inner">
                 <div className="text-center">
-                    <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" title="Get your Ticket!">Get your Ticket(s)!</a>
+                    <a href="http://46.101.199.230/form/index.php/welcome/form/JSC21/JSC21CONF" title="Get your Ticket!">Get your Ticket(s)!</a>
                 </div>
                 <div>
-                    <a href="mailto:sponsors@jscamp.ro?subject=Sponsorship JSCamp 2020" title="Become a Sponsor!">Become a Sponsor!</a>
+                    <a href="mailto:sponsors@jscamp.ro?subject=Sponsorship JSCamp Online 2021" title="Become a Sponsor!">Become a Sponsor!</a>
                 </div>
                 <div>
-                    <a href="mailto:contact@jscamp.ro?subject=JSCamp 2020 Website Contact">contact@jscamp.ro</a>
+                    <a href="mailto:contact@jscamp.ro?subject=JSCamp 2021 Website Contact">contact@jscamp.ro</a>
                 </div>
           </div>
           <div className="terms">

@@ -127,7 +127,8 @@ section {
         margin-bottom: 1em;
     }
 
-    &.tickets {
+    &.tickets,
+    &.speakers-details {
         .block {
             max-width: 1600px;
         }
