@@ -29,6 +29,9 @@ const TopNavigation = () => {
             <li>
                 <Link to="http://46.101.199.230/form/index.php/welcome/form/JSC21/JSC21CONF" className="tickets">Tickets</Link>
             </li>
+            {/* <li>
+            <Link to="/ticketsdraft">Tickets</Link>
+            </li> */}
             
         </ul>
     </nav>

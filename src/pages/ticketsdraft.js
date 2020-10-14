@@ -8,10 +8,10 @@ const CodeOfConduct = () => (
     
     <SEO title="JSCamp Romania Tickets" />
     <Helmet bodyAttributes={{ class: 'tickets' }} />
-    <div class="inner-page-wrapper tickets">
-        <h2 class="text-center">Tickets</h2>
-        <div class="block">
-          <div class="grid grid-tickets">
+    <div className="inner-page-wrapper tickets">
+        <h2 className="text-center">Tickets</h2>
+        <div className="block">
+          {/* <div class="grid grid-tickets">
               <div class="col-4_lg-6_xs-12">
                 <a href="http://46.101.199.230/form/index.php/welcome/form/JSC20/JSC20CONF" class="ticket">
                     <b>Early Bird</b> <br></br>
@@ -36,9 +36,10 @@ const CodeOfConduct = () => (
                     <p>30 seats / Workshop</p>
                 </a>
               </div>
-          </div>
+          </div> */}
+          <script type="text/javascript" src="https://ove.ro/embed/b893los.js?en"></script>
         </div>
-        <h3 class="text-center">10% discount for groups of 3 or more only for conference tickets.</h3>
+        <h3 className="text-center">10% discount for groups of 3 or more only for conference tickets.</h3>
     </div>
    
   </Layout>
