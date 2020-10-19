@@ -37,7 +37,10 @@ const CodeOfConduct = () => (
                 </a>
               </div>
           </div> */}
-          <script type="text/javascript" src="https://ove.ro/embed/b893los.js?en"></script>
+        {/* <Helmet> */}
+            <script type="text/javascript" src="https://ove.ro/embed/b893los.js?en"></script>
+        {/* </Helmet> */}
+          
         </div>
         <h3 className="text-center">10% discount for groups of 3 or more only for conference tickets.</h3>
     </div>

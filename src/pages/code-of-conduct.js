@@ -11,9 +11,9 @@ const CodeOfConduct = () => (
     <div class="inner-page-wrapper">
         <div class="block">
             <h2>Code of Conduct</h2>
-            <p>All participants, speakers, sponsors attending a JSCamp Romania 2020 are required to agree with the following code of conduct. The organizers will enforce this code throughout the event. </p>
+            <p>All participants, speakers, sponsors attending a JSCamp Romania 2021 are required to agree with the following code of conduct. The organizers will enforce this code throughout the event. </p>
 
-            <p>JSCamp Romania is all about equal community and as such, we will do whatever we believe is necessary to provide a safe, friendly and fun environment for our attendees, staff, guests, sponsors and presenters. We commit to upholding this code of conduct and we invite all those who participate in JSCamp Romania 2020 to help us create safe and positive experiences for everyone. Harassment of any kind will not be tolerated. </p>
+            <p>JSCamp Romania is all about equal community and as such, we will do whatever we believe is necessary to provide a safe, friendly and fun environment for our attendees, staff, guests, sponsors and presenters. We commit to upholding this code of conduct and we invite all those who participate in JSCamp Romania 2021 to help us create safe and positive experiences for everyone. Harassment of any kind will not be tolerated. </p>
 
             <p>If a participant engages in harassing behaviour, the conference organizers will take any action deemed appropriate, including warning the offenders, expelling them from the conference with no refund.</p>
 
