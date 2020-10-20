@@ -13,7 +13,7 @@ const HomeHero = () => (
             <div className="inner-container">
                 <div className="logo">
                     <h1><img src={logo} alt="JSCamp Romania 2020"></img></h1>
-                    <div class="online-badge">VIRTUAL EDITION</div>
+                    <div className="online-badge">VIRTUAL EDITION</div>
                     <div className="date-tagline">February 18-19, 2021</div>
                 </div>
                 

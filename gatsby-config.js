@@ -73,7 +73,7 @@ module.exports = {
     resolve: `gatsby-plugin-netlify-headers`,
         options: {
             headers: {
-                "/*": [
+                "/ticketsdraft": [
                     // matching headers (by type) are replaced by netlify with more specific routes
                     "Access-Control-Allow-Origin: * ",
                 ],
