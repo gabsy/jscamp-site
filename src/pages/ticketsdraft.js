@@ -37,9 +37,8 @@ const CodeOfConduct = () => (
                 </a>
               </div>
           </div> */}
-        <Helmet>
-            <script type="text/javascript" src="https://ove.ro/embed/b893los.js?en" crossOrigin="anonymous" async></script>
-        </Helmet>
+
+            <script src="https://ove.ro/embed/b893los.js?en"></script>
           
         </div>
         <h3 className="text-center">10% discount for groups of 3 or more only for conference tickets.</h3>
