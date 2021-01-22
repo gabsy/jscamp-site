@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
     <div className="wrapper" id="wrapper">
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
     </div>
     <CookieConsent
         location="bottom"

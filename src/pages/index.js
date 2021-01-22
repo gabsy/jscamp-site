@@ -31,11 +31,11 @@ const IndexPage = () => {
             <SEO />
             <Helmet bodyAttributes={{ class: 'homepage' }} />
             <HomeHero />
-            <Speakers />
-            <MasterCeremony />
+            {/* <Speakers /> */}
+            {/* <MasterCeremony /> */}
             {/* <Workshops /> */}
             {/* <Venue/> */}
-            <Sponsors />
+            {/* <Sponsors /> */}
             
         </Layout>
     )
