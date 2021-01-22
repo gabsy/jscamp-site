@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <Burgermenu/>
+    {/* <Burgermenu/> */}
     <div className="wrapper" id="wrapper">
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
